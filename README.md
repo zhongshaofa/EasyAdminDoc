@@ -1,9 +1,7 @@
-# EasyAdmin
-
-###项目介绍
+# 项目介绍
 EasyAdmin是基于ThinkPHP6.0+Layui的快速开发的后台管理系统。
 
-###项目特性
+# 项目特性
 * 完善的菜单管理
     * 分模块管理
     * 无限极菜单
@@ -32,7 +30,7 @@ EasyAdmin是基于ThinkPHP6.0+Layui的快速开发的后台管理系统。
 * 上传文件记录管理
 * 后台路径自定义，防止别人找到对应的后台地址
 
-###特别感谢
+# 特别感谢
 以下项目排名不分先后
 
 ThinkPHP：[https://github.com/top-think/framework](https://github.com/top-think/framework)
@@ -51,7 +49,7 @@ WangEditor：[https://github.com/wangfupeng1988/wangEditor](https://github.com/w
 
 Echarts：[https://github.com/apache/incubator-echarts](https://github.com/apache/incubator-echarts)
 
-### BUG反馈
+# BUG反馈
 项目使用过程成，如遇到BUG，可通过以下途径进行反馈。
 
 GitHub:[https://github.com/zhongshaofa/easyadmin/issues](https://github.com/zhongshaofa/easyadmin/issues)
@@ -60,8 +58,8 @@ Gitee:[https://gitee.com/zhongshaofa/easyadmin](https://gitee.com/zhongshaofa/ea
 
 QQ群:[763822524](https://jq.qq.com/?_wv=1027&k=5IHJawE)
    
-### 版权信息
+# 版权信息
 EasyAdmin遵循MIT开源协议发布，并提供免费使用。
 
-###QQ交流群
+# QQ交流群
 [763822524](https://jq.qq.com/?_wv=1027&k=5IHJawE) `加群请备注来源：如gitee、github、官网等`。
