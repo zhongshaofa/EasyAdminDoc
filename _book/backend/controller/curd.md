@@ -1,0 +1,2 @@
+# Curd trait引入
+

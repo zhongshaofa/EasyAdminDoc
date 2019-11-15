@@ -1,0 +1,81 @@
+{
+  "title": "EasyAdmin开发文档",
+  "author": "zhongshaofa",
+  "description": "2019-11-15",
+  "language": "zh-hans",
+  "structure": {
+    "readme": "README.md"
+  },
+  "plugins": [
+    "anchor-nav-x",
+    "tbfed-pagefooter",
+    "search-plus",
+    "popup",
+    "highlight",
+    "image-captions",
+    "styled-blockquotes",
+    "expandable-chapters-interactive"
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "sharing": {
+    "douban": false,
+    "facebook": false,
+    "google": false,
+    "hatenaBookmark": false,
+    "instapaper": false,
+    "line": false,
+    "linkedin": false,
+    "messenger": false,
+    "pocket": false,
+    "qq": false,
+    "qzone": false,
+    "stumbleupon": false,
+    "twitter": false,
+    "viber": false,
+    "vk": false,
+    "weibo": false,
+    "whatsapp": false,
+    "all": [
+        "google", "facebook", "weibo", "twitter",
+        "qq", "qzone", "linkedin", "pocket"
+    ]
+},
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "multipleH1": false,
+      "showLevel": false,
+      "float": {
+        "tocLevel1Icon": "fa fa-hand-o-right",
+        "tocLevel2Icon": "fa fa-hand-o-right",
+        "tocLevel3Icon": "fa fa-hand-o-right"
+      },
+      "toolTipMode": "click"
+    },
+    "anchor-nav-x": {
+      "associatedWithSummary": true,
+      "float": {
+        "level1Icon": "",
+        "level2Icon": "",
+        "level3Icon": "",
+        "showLevelIcon": false
+      },
+      "mode": "float",
+      "multipleH1": true,
+      "pageTop": {
+        "level1Icon": "",
+        "level2Icon": "",
+        "level3Icon": "",
+        "showLevelIcon": false
+      },
+      "printLog": false,
+      "showLevel": true
+    },
+    "tbfed-pagefooter": {
+      "copyright": "&copy zhongshaofa",
+      "modify_label": "文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}
