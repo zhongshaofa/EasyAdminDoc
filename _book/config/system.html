@@ -89,10 +89,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="upload.html" />
+    <link rel="next" href="auth.html" />
     
-    
-    <link rel="prev" href="config.html" />
     
 
     </head>
@@ -160,14 +158,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="config.html">
+        <li class="chapter " data-level="1.4" >
             
-                <a href="config.html">
+                <span>
             
                     
                     配置
             
-                </a>
+                </span>
             
 
             
@@ -187,7 +185,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="upload.html">
+        <li class="chapter " data-level="1.4.2" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    权限忽略配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="upload.html">
             
                 <a href="upload.html">
             
@@ -200,7 +211,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="static.html">
+        <li class="chapter " data-level="1.4.4" data-path="static.html">
             
                 <a href="static.html">
             
@@ -231,14 +242,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../backend/controller.html">
+        <li class="chapter " data-level="1.6" >
             
-                <a href="../backend/controller.html">
+                <span>
             
                     
                     控制器
             
-                </a>
+                </span>
             
 
             
@@ -302,14 +313,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../addons/addons.html">
+        <li class="chapter " data-level="1.7" >
             
-                <a href="../addons/addons.html">
+                <span>
             
                     
                     插件功能
             
-                </a>
+                </span>
             
 
             
@@ -479,9 +490,77 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-minus-circle"></i><ul><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><b></b>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</a></li></ul></div><a href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><a name="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-minus-circle"></i><ul><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><b></b>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x8D85;&#x7BA1;&#x914D;&#x7F6E;"><b></b>&#x8D85;&#x7BA1;&#x914D;&#x7F6E;</a></li></ul></div><a href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><a name="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</h1>
+<h3 id="env&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><a name="env&#x914D;&#x7F6E;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#env&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>env&#x914D;&#x7F6E;&#x8BF4;&#x660E;</h3>
+<pre><code class="lang-dotenv">   APP_DEBUG = true
+
+   [APP]
+   DEFAULT_TIMEZONE = Asia/Shanghai
+
+   [DATABASE]
+   TYPE = mysql
+   HOSTNAME = host.docker.internal
+   DATABASE = easyadmin
+   USERNAME = root
+   PASSWORD = root
+   HOSTPORT = 3306
+   CHARSET = utf8
+   DEBUG = true
+   PREFIX = ea_
+
+   [LANG]
+   default_lang = zh-cn
+
+   [EASYADMIN]
+   ADMIN = admintest
+   CAPTCHA = false
+   CDN =
+   EXAMPLE = true
+</code></pre>
+<ul>
+<li><code>EASYADMIN.ADMIN</code>&#xFF1A;&#x540E;&#x53F0;&#x8DEF;&#x5F84;</li>
+<li><code>EASYADMIN.CAPTCHA</code>&#xFF1A;&#x662F;&#x5426;&#x5F00;&#x542F;&#x9A8C;&#x8BC1;&#x7801;</li>
+<li><code>EASYADMIN.CDN</code>&#xFF1A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x5730;&#x5740;</li>
+<li><code>EASYADMIN.EXAMPLE</code>&#xFF1A;&#x662F;&#x5426;&#x4E3A;&#x6F14;&#x793A;&#x73AF;&#x5883;</li>
+</ul>
+<h1 id="&#x8D85;&#x7BA1;&#x914D;&#x7F6E;"><a name="&#x8D85;&#x7BA1;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x8D85;&#x7BA1;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D85;&#x7BA1;&#x914D;&#x7F6E;</h1>
+<p>&#x8D85;&#x7BA1;&#x4E0D;&#x53D7;&#x6743;&#x9650;&#x63A7;&#x5236;&#xFF0C;&#x9ED8;&#x8BA4;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6743;&#x9650;</p>
+<h3 id="&#x8D26;&#x53F7;&#x914D;&#x7F6E;"><a name="&#x8D26;&#x53F7;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x8D26;&#x53F7;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D26;&#x53F7;&#x914D;&#x7F6E;</h3>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#xFF1A;<code>app/common/constants/AdminConstant.php</code></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// +----------------------------------------------------------------------</span>
+<span class="hljs-comment">// | EasyAdmin</span>
+<span class="hljs-comment">// +----------------------------------------------------------------------</span>
+<span class="hljs-comment">// | PHP&#x4EA4;&#x6D41;&#x7FA4;: 763822524</span>
+<span class="hljs-comment">// +----------------------------------------------------------------------</span>
+<span class="hljs-comment">// | &#x5F00;&#x6E90;&#x534F;&#x8BAE;  https://mit-license.org </span>
+<span class="hljs-comment">// +----------------------------------------------------------------------</span>
+<span class="hljs-comment">// | github&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF1A;https://github.com/zhongshaofa/EasyAdmin</span>
+<span class="hljs-comment">// +----------------------------------------------------------------------</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">app</span>\<span class="hljs-title">common</span>\<span class="hljs-title">constants</span>;
+
+<span class="hljs-comment">/**
+ * &#x7BA1;&#x7406;&#x5458;&#x5E38;&#x91CF;
+ * Class AdminConstant
+ * <span class="hljs-doctag">@package</span> app\common\constants
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AdminConstant</span>
+</span>{
+
+    <span class="hljs-comment">/**
+     * &#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x4E0D;&#x53D7;&#x6743;&#x9650;&#x63A7;&#x5236;
+     */</span>
+    <span class="hljs-keyword">const</span> SUPER_ADMIN_ID = <span class="hljs-number">1</span>;
+
+}
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x5E38;&#x91CF;&#xFF1A;SUPER_ADMIN_ID <code>&#x7BA1;&#x7406;&#x5458;&#x5BF9;&#x5E94;ID</code> </li>
+</ul>
 <footer class="page-footer"><span class="copyright">&#xA9; zhongshaofa all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-11-15 16:47:05
+2019-11-18 10:10:54
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -526,12 +605,8 @@
 
             
                 
-                <a href="config.html" class="navigation navigation-prev " aria-label="Previous page: 配置">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="upload.html" class="navigation navigation-next " aria-label="Next page: 上传配置">
+                <a href="auth.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 权限忽略配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -542,7 +617,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"系统配置","level":"1.4.1","depth":2,"next":{"title":"上传配置","level":"1.4.2","depth":2,"path":"config/upload.md","ref":"config/upload.md","articles":[]},"previous":{"title":"配置","level":"1.4","depth":1,"path":"config/config.md","ref":"config/config.md","articles":[{"title":"系统配置","level":"1.4.1","depth":2,"path":"config/system.md","ref":"config/system.md","articles":[]},{"title":"上传配置","level":"1.4.2","depth":2,"path":"config/upload.md","ref":"config/upload.md","articles":[]},{"title":"静态资源配置","level":"1.4.3","depth":2,"path":"config/static.md","ref":"config/static.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-nav-x","tbfed-pagefooter","search-plus","popup","highlight","image-captions","styled-blockquotes","expandable-chapters-interactive","hide-element","code","insert-logo","custom-favicon","github","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy zhongshaofa","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhongshaofa/easyadmin"},"livereload":{},"search":{},"styled-blockquotes":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH1":false,"showLevel":false,"float":{"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"toolTipMode":"click"},"favicon":"images/favicon.ico","expandable-chapters-interactive":{},"anchor-nav-x":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 60px","url":"/images/logo.png"},"search-plus":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"zhongshaofa","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"EasyAdmin开发文档","language":"zh-hans","gitbook":"*","sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"description":"EasyAdmin详细开发文档教程"},"file":{"path":"config/system.md","mtime":"2019-11-15T08:47:05.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-15T09:54:19.477Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"系统配置","level":"1.4.1","depth":2,"next":{"title":"权限忽略配置","level":"1.4.2","depth":2,"path":"config/auth.md","ref":"config/auth.md","articles":[]},"previous":{"title":"配置","level":"1.4","depth":1,"ref":"","articles":[{"title":"系统配置","level":"1.4.1","depth":2,"path":"config/system.md","ref":"config/system.md","articles":[]},{"title":"权限忽略配置","level":"1.4.2","depth":2,"path":"config/auth.md","ref":"config/auth.md","articles":[]},{"title":"上传配置","level":"1.4.3","depth":2,"path":"config/upload.md","ref":"config/upload.md","articles":[]},{"title":"静态资源配置","level":"1.4.4","depth":2,"path":"config/static.md","ref":"config/static.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-nav-x","tbfed-pagefooter","search-plus","popup","highlight","image-captions","styled-blockquotes","expandable-chapters-interactive","hide-element","code","insert-logo","custom-favicon","github","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy zhongshaofa","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhongshaofa/easyadmin"},"livereload":{},"search":{},"styled-blockquotes":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH1":false,"showLevel":false,"float":{"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"toolTipMode":"click"},"favicon":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/upload/images/favicon.ico","expandable-chapters-interactive":{},"anchor-nav-x":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 60px","url":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/upload/images/logo.png"},"search-plus":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"zhongshaofa","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"EasyAdmin开发文档","language":"zh-hans","gitbook":"*","sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"description":"EasyAdmin详细开发文档教程"},"file":{"path":"config/system.md","mtime":"2019-11-18T02:10:54.766Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-18T02:33:51.358Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

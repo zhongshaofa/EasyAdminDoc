@@ -3,17 +3,18 @@
 * [简介](README.md)
 * [安装](base/install.md)
 * [架构](base/architecture.md)
-* [配置](config/config.md)
+* 配置
     * [系统配置](config/system.md)
+    * [权限忽略配置](config/auth.md)
     * [上传配置](config/upload.md)
     * [静态资源配置](config/static.md)
 * [数据库](database/database.md)
-* [控制器](backend/controller.md)
+* 控制器
     * [注解权限](backend/controller/annotations.md)
     * [Curd trait引入](backend/controller/curd.md)
     * [modify允许修改值](backend/controller/modify.md)
     * [验证器使用](backend/controller/validate.md)
-* [插件功能](addons/addons.md)
+* 插件功能
     * [插件使用](addons/use.md)
     * [插件开发](addons/dev.md)
 * [前端](frontend/frontend.md)
