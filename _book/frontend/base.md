@@ -1,12 +1,13 @@
-# table列表
-虽然layui已经提供了很多方便的方法，但是还是不够简便，目前系统对layui table模块进行了重新封装，并兼容所有的layui table的方法。
+# 必看基础信息
+系统做了一些封装，先查看此文档会有效解决你的疑问
 
-使得开发起来更加得心应手，减轻工作量。
+#后台控制器与JS的绑定
+* 控制器中JS的目录对应为：`public/static/admin/js`
+* 文件命名为小写+下划杠
+* 控制器的每一个方法对应JS的`Controller`对象的一个属性
+* 每一个JS文件都需要引入`admin`模块，并执行监听` admin.listen();`;
 
-东西有点多，一时半会写不完，有空再写。。。。。
-
-# 表格上方搜索器的自动生成
-#####示例
+#####例子
 ```js
 define(["jquery", "admin",], function ($, admin) {
 
@@ -57,14 +58,16 @@ define(["jquery", "admin",], function ($, admin) {
 
             admin.listen();
         },
+        add: function () {
+            admin.listen();
+        },
+        edit: function () {
+            admin.listen();
+        },
+        password: function () {
+            admin.listen();
+        }
     };
     return Controller;
 });
 ```
-# 表格内部操作栏的自动生成
-
-# 表格左上方操作栏的自动生成
-
-# 其它api接口
-
-# 自行扩展

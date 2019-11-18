@@ -40,17 +40,17 @@
     "weibo": false,
     "whatsapp": false,
     "all": [
-        "google", "facebook", "weibo", "twitter",
-        "qq", "qzone", "linkedin", "pocket"
+      "google", "facebook", "weibo", "twitter",
+      "qq", "qzone", "linkedin", "pocket"
     ]
-},
+  },
   "pluginsConfig": {
-    "favicon": "https://easyadmin.oss-cn-shenzhen.aliyuncs.com/upload/images/favicon.ico",
+    "favicon": "images/favicon.ico",
     "github": {
       "url": "https://github.com/zhongshaofa/easyadmin"
     },
     "insert-logo": {
-      "url": "https://easyadmin.oss-cn-shenzhen.aliyuncs.com/upload/images/logo.png",
+      "url": "/images/logo.png",
       "style": "background: none; max-height: 60px; min-height: 60px"
     },
     "hide-element": {

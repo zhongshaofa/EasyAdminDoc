@@ -27,11 +27,13 @@
    CAPTCHA = false
    CDN =
    EXAMPLE = true
+   OSS_STATIC_PREFIX = static_easyadmin
    ```
    * `EASYADMIN.ADMIN`：后台路径
    * `EASYADMIN.CAPTCHA`：是否开启验证码
    * `EASYADMIN.CDN`：静态资源地址
    * `EASYADMIN.EXAMPLE`：是否为演示环境
+   * `EASYADMIN.OSS_STATIC_PREFIX`：静态资源上传前缀
    
 # 超管配置
 超管不受权限控制，默认获取所有权限
