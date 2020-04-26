@@ -3,11 +3,11 @@
 * [简介](README.md)
 * [安装](base/install.md)
 * [架构](base/architecture.md)
+* [数据库](database/database.md)
 * 配置
     * [系统配置](config/system.md)
     * [权限忽略配置](config/auth.md)
     * [静态资源配置](config/static.md)
-* [数据库](database/database.md)
 * 控制器
     * [注解权限](backend/controller/annotations.md)
     * [Curd trait引入](backend/controller/curd.md)

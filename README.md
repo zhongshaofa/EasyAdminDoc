@@ -38,11 +38,11 @@ EasyAdmin是基于ThinkPHP6.0+Layui的快速开发的后台管理系统。
 
 ThinkPHP：[https://github.com/top-think/framework](https://github.com/top-think/framework)
 
+Layuimini：[https://github.com/zhongshaofa/layuimini](https://github.com/zhongshaofa/layuimini)
+
 Annotations：[https://github.com/doctrine/annotations](https://github.com/doctrine/annotations)
 
 Layui：[https://github.com/sentsin/layui](https://github.com/sentsin/layui)
-
-Layuimini：[https://github.com/zhongshaofa/layuimini](https://github.com/zhongshaofa/layuimini)
 
 Jquery：[https://github.com/jquery/jquery](https://github.com/jquery/jquery)
 

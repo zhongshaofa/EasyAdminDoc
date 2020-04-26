@@ -10,9 +10,9 @@
 * modify：属性修改
 
 ###使用方法
-* 在类里面直接引入`use \app\admin\traits\Curd;`
+* 在类里面引入`use \app\admin\traits\Curd;`
+* 在类直接引入`use EasyAdmin\annotation\NodeAnotation;`,（备注：因为方法内有使用到权限注解，至少要引入该类，不然会在节点更新的时候报出异常）
 * 初始化当前模型
-* 引入`use EasyAdmin\annotation\NodeAnotation;`,（备注：因为方法内有使用到注解，至少要引入该类，不然会在节点更新的时候报出异常）
 
 #####示例
 ```php

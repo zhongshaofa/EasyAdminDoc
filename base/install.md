@@ -12,15 +12,15 @@
 
 * 网站入口请部署至public文件夹下（即 easyadmin/public 目录下）
 
+* 修改伪静态配置, 请参考下方伪静态设置。
+
 * 手动安装主目录下的`easyadmin.sql`的数据库文件
 
-* 复制主目录下的`.example.env`文件为`.env`
+* 运行网站地址, 会自动进入安装界面, 根据提示进行设置。
 
-* 修改`.env`的数据库配置信息以及后台入口后台入口配置项为：EASYADMIN.ADMIN
+![阿里云上传配置](../images/install.png)
 
-* 修改伪静态，请参考下方伪静态的配置
-
-* 运行网站地址+后台入口
+* 安装完成后会自动生成安装锁`config/install/lock/install.lock`, 如需重新安装, 删掉该文件即可。
 
 # 伪静态配置
 可以通过URL重写隐藏应用的入口文件`index.php`

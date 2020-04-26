@@ -6,7 +6,7 @@
 #####步骤
 1、在后台修改文件上传为阿里云，并修改对应的配置项
 
-![阿里云上传配置](../images/upload_config.jpg)
+![阿里云上传配置](../images/config.png)
 
 2、修改`.nev`文件下的配置：
 * `EASYADMIN.CDN`：静态资源地址（例如：https://easyadmin.oss-cn-shenzhen.aliyuncs.com/static_easyadmin）

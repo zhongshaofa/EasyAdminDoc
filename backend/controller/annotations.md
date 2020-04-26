@@ -7,8 +7,8 @@
 * 注解类： `EasyAdmin\annotation\ControllerAnnotation`
 * 作用范围： CLASS
 * 拥有属性：
-    * title 控制器的名称（必填）
-    * auth  是否开启权限控制，默认为true （选填，Enum:`{true, false}`）
+    * `title` 控制器的名称（必填）
+    * `auth`  是否开启权限控制，默认为true （选填，Enum:`{true, false}`）
 
 #####示例
 备注：注解前请先引用`use EasyAdmin\annotation\ControllerAnnotation;`
@@ -64,3 +64,11 @@ class Test extends AdminController
     }
 }
 ```
+
+### 更新权限节点
+
+* 使用命令`php think node`进行更新权限节点。
+
+* 在后台节点管理里面点击更新。
+
+![执行命令行](../../images/node.png)

@@ -43,9 +43,9 @@ return [
 ];
 ```
 
-* no_login_controller：不需要验证登录的控制器
-* no_login_node：不需要验证登录的节点
-* no_auth_controller：不需要验证权限的控制器
-* no_auth_node：不需要验证权限的节点
+* `no_login_controller`：不需要验证登录的控制器
+* `no_login_node`：不需要验证登录的节点
+* `no_auth_controller`：不需要验证权限的控制器
+* `no_auth_node`：不需要验证权限的节点
 
 控制器和节点是一个并关系，如果控制器在二级目录下，写法应该为：system/config （对应位置：`app/admin/controller/system/Config.php`）

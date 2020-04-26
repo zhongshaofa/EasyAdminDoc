@@ -28,7 +28,6 @@ EasyAdmin项目目录
 │   │   ├── easy-addons      //插件扩展
 │   │   ├── easy-admin       //后台扩展
 ├── view
-│   │   ├── admin    //后台视图页面
 │   │   ├── index    //前台视图页面
 ├── LICENSE
 ├── README.md
