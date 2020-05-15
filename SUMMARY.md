@@ -1,10 +1,10 @@
 # Summary
 
-* [简介](README.md)
-* [安装](base/install.md)
-* [架构](base/architecture.md)
-* [数据库](database/database.md)
-* 配置
+* [项目简介](README.md)
+* [系统安装](base/install.md)
+* [系统架构](base/architecture.md)
+* [数据库规范](database/database.md)
+* 配置项
     * [系统配置](config/system.md)
     * [权限忽略配置](config/auth.md)
     * [静态资源配置](config/static.md)
