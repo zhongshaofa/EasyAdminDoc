@@ -1,0 +1,887 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Curd引用 · EasyAdmin开发文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhongshaofa">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-nav-x/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="validate.html" />
+    
+    
+    <link rel="prev" href="attributes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../base/install.html">
+            
+                <a href="../../base/install.html">
+            
+                    
+                    系统安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../base/architecture.html">
+            
+                <a href="../../base/architecture.html">
+            
+                    
+                    系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../database/database.html">
+            
+                <a href="../../database/database.html">
+            
+                    
+                    数据库规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    配置项
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../config/system.html">
+            
+                <a href="../../config/system.html">
+            
+                    
+                    系统配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../config/auth.html">
+            
+                <a href="../../config/auth.html">
+            
+                    
+                    权限忽略配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../config/static.html">
+            
+                <a href="../../config/static.html">
+            
+                    
+                    静态资源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    控制器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="annotations.html">
+            
+                <a href="annotations.html">
+            
+                    
+                    注解权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="attributes.html">
+            
+                <a href="attributes.html">
+            
+                    
+                    控制器属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="curd.html">
+            
+                <a href="curd.html">
+            
+                    
+                    Curd引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="validate.html">
+            
+                <a href="validate.html">
+            
+                    
+                    验证器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../frontend/base.html">
+            
+                <a href="../../frontend/base.html">
+            
+                    
+                    必看基础信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../frontend/auth.html">
+            
+                <a href="../../frontend/auth.html">
+            
+                    
+                    auth权限验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../frontend/form.html">
+            
+                <a href="../../frontend/form.html">
+            
+                    
+                    form表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../frontend/table.html">
+            
+                <a href="../../frontend/table.html">
+            
+                    
+                    table初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../frontend/table_search.html">
+            
+                <a href="../../frontend/table_search.html">
+            
+                    
+                    table搜索器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../frontend/listen.html">
+            
+                <a href="../../frontend/listen.html">
+            
+                    
+                    内置监听事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../frontend/date.html">
+            
+                <a href="../../frontend/date.html">
+            
+                    
+                    日期时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../frontend/select.html">
+            
+                <a href="../../frontend/select.html">
+            
+                    
+                    动态下拉选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../../frontend/upload.html">
+            
+                <a href="../../frontend/upload.html">
+            
+                    
+                    上传组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../../frontend/editor.html">
+            
+                <a href="../../frontend/editor.html">
+            
+                    
+                    富文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    插件功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../addons/use.html">
+            
+                <a href="../../addons/use.html">
+            
+                    
+                    插件使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../addons/dev.html">
+            
+                <a href="../../addons/dev.html">
+            
+                    
+                    插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../base/question.html">
+            
+                <a href="../../base/question.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Curd引用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-minus-circle"></i><ul><li><span class="title-icon "></span><a href="#curd-trait&#x5F15;&#x5165;"><b></b>Curd trait&#x5F15;&#x5165;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><b></b>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;"><b></b>&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;</a></li><li><span class="title-icon "></span><a href="#index&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;"><b></b>index()&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;</a></li><li><span class="title-icon "></span><a href="#modify&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;"><b></b>modify()&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;</a></li></ul></div><a href="#curd-trait&#x5F15;&#x5165;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="curd-trait&#x5F15;&#x5165;"><a name="curd-trait&#x5F15;&#x5165;" class="anchor-navigation-ex-anchor" href="#curd-trait&#x5F15;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>Curd trait&#x5F15;&#x5165;</h1>
+<p>&#x540E;&#x53F0;&#x4F7F;&#x7528;Curd trait, &#x80FD;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x590D;&#x7528;&#x6027;, &#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#xFF1A;<code>app/admin/traits/Curd.php</code></p>
+<blockquote>
+<p>&#x9ED8;&#x8BA4;&#x7684;CURD&#x65B9;&#x6CD5;&#x6709;&#xFF1A;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>add</td>
+<td>&#x6DFB;&#x52A0;</td>
+</tr>
+<tr>
+<td>edit</td>
+<td>&#x7F16;&#x8F91;</td>
+</tr>
+<tr>
+<td>del</td>
+<td>&#x5220;&#x9664;</td>
+</tr>
+<tr>
+<td>export</td>
+<td>&#x5BFC;&#x51FA;</td>
+</tr>
+<tr>
+<td>modify</td>
+<td>&#x5C5E;&#x6027;&#x4FEE;&#x6539;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><a name="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h1>
+<ul>
+<li>&#x5728;&#x7C7B;&#x91CC;&#x9762;&#x5F15;&#x5165;<code>use \app\admin\traits\Curd;</code></li>
+<li>&#x5728;&#x7C7B;&#x76F4;&#x63A5;&#x5F15;&#x5165;<code>use EasyAdmin\annotation\NodeAnotation;</code>,&#xFF08;&#x5907;&#x6CE8;&#xFF1A;&#x56E0;&#x4E3A;&#x65B9;&#x6CD5;&#x5185;&#x6709;&#x4F7F;&#x7528;&#x5230;&#x6743;&#x9650;&#x6CE8;&#x89E3;&#xFF0C;&#x81F3;&#x5C11;&#x8981;&#x5F15;&#x5165;&#x8BE5;&#x7C7B;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x5728;&#x8282;&#x70B9;&#x66F4;&#x65B0;&#x7684;&#x65F6;&#x5019;&#x62A5;&#x51FA;&#x5F02;&#x5E38;&#xFF09;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x5F53;&#x524D;&#x6A21;&#x578B;</li>
+</ul>
+<blockquote>
+<p>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</p>
+</blockquote>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">controller</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">model</span>\<span class="hljs-title">SystemConfig</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">common</span>\<span class="hljs-title">controller</span>\<span class="hljs-title">AdminController</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">ControllerAnnotation</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">NodeAnotation</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">think</span>\<span class="hljs-title">App</span>;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@ControllerAnnotation</span>(title=&quot;&#x6D4B;&#x8BD5;&#x63A7;&#x5236;&#x5668;&quot;)
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AdminController</span></span>{
+
+    <span class="hljs-keyword">use</span> \<span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">traits</span>\<span class="hljs-title">Curd</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(App $app)</span></span>{
+        <span class="hljs-keyword">parent</span>::__construct($app);
+        <span class="hljs-keyword">$this</span>-&gt;model = <span class="hljs-keyword">new</span> SystemConfig();
+    }
+}
+</code></pre>
+<h1 id="&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;"><a name="&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;" class="anchor-navigation-ex-anchor" href="#&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8986;&#x76D6;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;</h1>
+<blockquote>
+<p>&#x56E0;&#x4E3A;&#x9ED8;&#x8BA4;&#x7684;Curd&#x4E0D;&#x9002;&#x7528;&#x4F60;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x8BF7;&#x590D;&#x5236;<code>app/admin/traits/Curd.php</code>&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;&#x5230;&#x4F60;&#x7684;&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x8FDB;&#x884C;&#x8986;&#x76D6;&#x4FEE;&#x6539;&#x3002;</p>
+</blockquote>
+<h1 id="index&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;"><a name="index&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#index&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a><code>index()</code>&#x5217;&#x8868;&#x5173;&#x8054;&#x67E5;&#x8BE2;</h1>
+<ul>
+<li>&#x4FEE;&#x6539;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5C5E;&#x6027;<code>relationSerach</code>&#x4E3A;true</li>
+<li>&#x6A21;&#x578B;&#x5173;&#x8054;&#x8BF7;&#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;<code>withJoin()</code></li>
+</ul>
+<blockquote>
+<p>&#x4EE3;&#x7801;&#x793A;&#x4F8B;<code>&#x63A7;&#x5236;&#x5668;</code></p>
+</blockquote>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">controller</span>\<span class="hljs-title">mall</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">model</span>\<span class="hljs-title">MallGoods</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">traits</span>\<span class="hljs-title">Curd</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">common</span>\<span class="hljs-title">controller</span>\<span class="hljs-title">AdminController</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">ControllerAnnotation</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">NodeAnotation</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">think</span>\<span class="hljs-title">App</span>;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@ControllerAnnotation</span>(title=&quot;&#x5546;&#x57CE;&#x5546;&#x54C1;&#x7BA1;&#x7406;&quot;)
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Goods</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AdminController</span>
+</span>{
+
+    <span class="hljs-keyword">use</span> <span class="hljs-title">Curd</span>;
+
+    <span class="hljs-keyword">protected</span> $relationSerach = <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(App $app)</span>
+    </span>{
+        <span class="hljs-keyword">parent</span>::__construct($app);
+        <span class="hljs-keyword">$this</span>-&gt;model = <span class="hljs-keyword">new</span> MallGoods();
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@NodeAnotation</span>(title=&quot;&#x5217;&#x8868;&quot;)
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">$this</span>-&gt;request-&gt;isAjax()) {
+            <span class="hljs-keyword">if</span> (input(<span class="hljs-string">&apos;selectFieds&apos;</span>)) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;selectList();
+            }
+            <span class="hljs-keyword">list</span>($page, $limit, $where) = <span class="hljs-keyword">$this</span>-&gt;buildTableParames();
+            $count = <span class="hljs-keyword">$this</span>-&gt;model
+                -&gt;withJoin(<span class="hljs-string">&apos;cate&apos;</span>, <span class="hljs-string">&apos;LEFT&apos;</span>)
+                -&gt;where($where)
+                -&gt;count();
+            $list = <span class="hljs-keyword">$this</span>-&gt;model
+                -&gt;withJoin(<span class="hljs-string">&apos;cate&apos;</span>, <span class="hljs-string">&apos;LEFT&apos;</span>)
+                -&gt;where($where)
+                -&gt;page($page, $limit)
+                -&gt;order(<span class="hljs-keyword">$this</span>-&gt;sort)
+                -&gt;select();
+            $data = [
+                <span class="hljs-string">&apos;code&apos;</span>  =&gt; <span class="hljs-number">0</span>,
+                <span class="hljs-string">&apos;msg&apos;</span>   =&gt; <span class="hljs-string">&apos;&apos;</span>,
+                <span class="hljs-string">&apos;count&apos;</span> =&gt; $count,
+                <span class="hljs-string">&apos;data&apos;</span>  =&gt; $list,
+            ];
+            <span class="hljs-keyword">return</span> json($data);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;fetch();
+    }
+}
+</code></pre>
+<blockquote>
+<p>&#x4EE3;&#x7801;&#x793A;&#x4F8B;<code>&#x6A21;&#x578B;</code></p>
+</blockquote>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">model</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">common</span>\<span class="hljs-title">model</span>\<span class="hljs-title">TimeModel</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MallGoods</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">TimeModel</span>
+</span>{
+
+    <span class="hljs-keyword">protected</span> $deleteTime = <span class="hljs-string">&apos;delete_time&apos;</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cate</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;belongsTo(<span class="hljs-string">&apos;app\admin\model\MallCate&apos;</span>, <span class="hljs-string">&apos;cate_id&apos;</span>, <span class="hljs-string">&apos;id&apos;</span>);
+    }
+
+}
+</code></pre>
+<h1 id="modify&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;"><a name="modify&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;" class="anchor-navigation-ex-anchor" href="#modify&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a><code>modify()</code>&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x9650;&#x5236;</h1>
+<blockquote>
+<p>&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#xFF0C;modify&#x65B9;&#x6CD5;&#x9ED8;&#x8BA4;&#x5141;&#x8BB8;&#x4FEE;&#x6539;&#x7684;&#x5B57;&#x6BB5;&#x6709;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li>status</li>
+<li>sort</li>
+<li>remark</li>
+<li>is_delete</li>
+<li>is_auth</li>
+<li>title</li>
+</ul>
+<blockquote>
+<p>&#x5982;&#x679C;&#x9ED8;&#x8BA4;&#x5B57;&#x6BB5;&#x4E0D;&#x9002;&#x7528;&#x4F60;&#x7684;&#x9700;&#x6C42;&#x8BF7;, &#x8BF7;&#x5728;&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x8986;&#x76D6;&#x8BE5;&#x5C5E;&#x6027;<code>allowModifyFileds</code>&#x503C;&#x5373;&#x53EF;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">controller</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">app</span>\<span class="hljs-title">common</span>\<span class="hljs-title">controller</span>\<span class="hljs-title">AdminController</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">ControllerAnnotation</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">EasyAdmin</span>\<span class="hljs-title">annotation</span>\<span class="hljs-title">NodeAnotation</span>;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@ControllerAnnotation</span>(title=&quot;&#x6D4B;&#x8BD5;&#x63A7;&#x5236;&#x5668;&quot;)
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AdminController</span></span>{
+
+    <span class="hljs-keyword">use</span> \<span class="hljs-title">app</span>\<span class="hljs-title">admin</span>\<span class="hljs-title">traits</span>\<span class="hljs-title">Curd</span>;
+
+    <span class="hljs-keyword">protected</span> $allowModifyFileds = [<span class="hljs-string">&apos;username&apos;</span>,<span class="hljs-string">&apos;sort&apos;</span>];
+
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; zhongshaofa all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-05-15 22:09:53
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="attributes.html" class="navigation navigation-prev " aria-label="Previous page: 控制器属性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="validate.html" class="navigation navigation-next " aria-label="Next page: 验证器使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Curd引用","level":"1.6.3","depth":2,"next":{"title":"验证器使用","level":"1.6.4","depth":2,"path":"backend/controller/validate.md","ref":"backend/controller/validate.md","articles":[]},"previous":{"title":"控制器属性","level":"1.6.2","depth":2,"path":"backend/controller/attributes.md","ref":"backend/controller/attributes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-nav-x","tbfed-pagefooter","search-plus","popup","highlight","image-captions","styled-blockquotes","expandable-chapters-interactive","hide-element","code","insert-logo","custom-favicon","github","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy zhongshaofa","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhongshaofa/easyadmin"},"livereload":{},"search":{},"styled-blockquotes":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH1":false,"showLevel":false,"float":{"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"toolTipMode":"click"},"favicon":"images/favicon.ico","expandable-chapters-interactive":{},"anchor-nav-x":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 60px","url":"/images/logo.png"},"search-plus":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"zhongshaofa","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"backend/controller/annotations.html#fig1.6.1.1","level":"1.6.1","list_caption":"Figure: 执行命令行","alt":"执行命令行","nro":1,"url":"../../images/node.png","index":1,"caption_template":"Figure: _CAPTION_","label":"执行命令行","attributes":{},"skip":false,"key":"1.6.1.1"}]},"title":"EasyAdmin开发文档","language":"zh-hans","gitbook":"*","sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"description":"EasyAdmin详细开发文档教程"},"file":{"path":"backend/controller/curd.md","mtime":"2020-05-15T14:09:53.926Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-15T17:00:15.710Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchor-nav-x/lib/handler.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
