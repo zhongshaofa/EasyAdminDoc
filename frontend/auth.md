@@ -5,12 +5,20 @@
 
 为了避免用户困扰，可以在此用上前端的权限认证，判断是否显示还是隐藏
 
-##### 例子
-* 添加上`auth="system.menu/add"`
-* 如果页面中没有引入`public/static/admin/css/public.css`样式文件，需要手动添加该样式`[auth] { display: none; }`
-* 在对应的js文件内引入`admin`模块，并执行`admin.listen();`进行监听
+### 页面权限例子
 
+* 第一种示例, 通过`auth`方法生成`layui-hide`样式属性。
 ```html
-<button class="layui-btn layui-btn-sm" auth="system.menu/add">添加</button>
+<button class="layui-btn layui-btn-sm {if !auth('system.menu/add')}layui-hide{/if}" auth="system.menu/add">添加</button>
 ```
+
+* 第二种, 通过`auth`方法判断, 是否显示html
+```html
+{if !auth('system.menu/add')}
+<button class="layui-btn layui-btn-sm" auth="system.menu/add">添加</button>
+{/if}
+```
+
+### table表格权限例子
+
 

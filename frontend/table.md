@@ -6,7 +6,8 @@
 东西有点多，一时半会写不完，有空再写。。。。。
 
 # 表格上方搜索器的自动生成
-#####示例
+
+###示例
 ```js
 define(["jquery", "admin",], function ($, admin) {
 
@@ -46,7 +47,7 @@ define(["jquery", "admin",], function ($, admin) {
                                     class: 'layui-btn layui-btn-normal layui-btn-xs',
                                     text: '设置密码',
                                     open: 'system.admin/password',
-                                    auth: 'system.admin/password',
+                                    auth: 'password',
                                     extend: ""
                                 }
                             ], 'delete'
@@ -57,10 +58,35 @@ define(["jquery", "admin",], function ($, admin) {
 
             admin.listen();
         },
+        add: function () {
+            admin.listen();
+        },
+        edit: function () {
+            admin.listen();
+        },
+        password: function () {
+            admin.listen();
+        }
     };
     return Controller;
 });
 ```
+
+# `init`参数一览表
+
+> 以下参数是`miniAdmin.render();`初始化时进行传入。
+
+| 参数 | 说明 |类型 | 默认值| 备注 |
+| --- | --- |--- |--- |--- |
+| iniUrl | 初始化接口 | string | null | 实际使用，请对接后端接口动态生成，格式请参考文件：`api/init.json` |
+| clearUrl | 缓存清理接口 | string | null | 实际使用，请对接后端接口动态生成，格式请参考文件：`api/init.json` |
+| urlHashLocation | 是否打开hash定位 | bool | false | 开启后，会显示路由信息，刷新页面后将定位到当前页|
+| bgColorDefault | 主题默认配置 | int | 0 | 如需添加更多主题信息，请在`js/lay-module/layuimini/miniTheme.js`文件内添加|
+| multiModule | 是否开启多模块 | bool | false | 个人建议开启 |
+| menuChildOpen | 是否默认展开菜单 | bool | false | 个人建议关闭 |
+| loadingTime| 初始化加载时间 | 0 | 0 | 建议0-2之间 |
+| pageAnim| iframe窗口动画 | bool | false | 添加tab或者切换时的过渡动漫 |
+| maxTabNum| 最大的tab打开数量 | int | 20 | 防止打开太多的tab窗口导致页面卡死 |
 # 表格内部操作栏的自动生成
 
 # 表格左上方操作栏的自动生成
