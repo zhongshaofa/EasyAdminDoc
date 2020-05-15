@@ -18,6 +18,7 @@
     * [auth权限验证](frontend/auth.md)
     * [form表单](frontend/form.md)
     * [table列表](frontend/table.md)
+    * [上传组件](frontend/upload.md)
     * [富文本编辑器](frontend/editor.md)
 * 插件功能
     * [插件使用](addons/use.md)
