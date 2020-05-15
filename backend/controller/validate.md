@@ -1,11 +1,14 @@
 # 验证器使用
+
 * 此验证器的使用只针对于后台控制器
 * 需要先继承该类`app\common\controller\AdminController`
 
-#####示例
-验证规则的编写参考ThinkPHP的文档
+验证规则的编写参考ThinkPHP的文档。
 
-调用`validate`方法进行验证，如果验证未通过，会直接调用`$this->error();`方法
+调用`validate`方法进行验证，如果验证未通过，会直接调用`$this->error();`方法。
+
+> 代码示例
+
 ```php
 <?php
 namespace app\admin\controller;

@@ -10,7 +10,8 @@
     * [静态资源配置](config/static.md)
 * 控制器
     * [注解权限](backend/controller/annotations.md)
-    * [Curd trait引入](backend/controller/curd.md)
+    * [控制器属性](backend/controller/attributes.md)
+    * [Curd引用](backend/controller/curd.md)
     * [验证器使用](backend/controller/validate.md)
 * 前端
     * [必看基础信息](frontend/base.md)
