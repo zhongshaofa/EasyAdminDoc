@@ -17,7 +17,9 @@
     * [必看基础信息](frontend/base.md)
     * [auth权限验证](frontend/auth.md)
     * [form表单](frontend/form.md)
-    * [table列表](frontend/table.md)
+    * [table初始化](frontend/table.md)
+    * [内置监听事件](frontend/listen.md)
+    * [异步下拉选择](frontend/select.md)
     * [上传组件](frontend/upload.md)
     * [富文本编辑器](frontend/editor.md)
 * 插件功能
