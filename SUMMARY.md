@@ -19,7 +19,6 @@
     * [form表单](frontend/form.md)
     * [table数据表格](frontend/table.md)
     * [内置监听事件](frontend/listen.md)
-    * [日期时间](frontend/date.md)
     * [动态下拉选择](frontend/select.md)
     * [上传组件](frontend/upload.md)
     * [富文本编辑器](frontend/editor.md)

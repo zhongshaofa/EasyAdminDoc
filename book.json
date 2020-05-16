@@ -45,12 +45,12 @@
     ]
   },
   "pluginsConfig": {
-    "favicon": "images/favicon.ico",
+    "favicon": "https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/favicon.ico",
     "github": {
       "url": "https://github.com/zhongshaofa/easyadmin"
     },
     "insert-logo": {
-      "url": "/images/logo.png",
+      "url": "https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/logo.png",
       "style": "background: none; max-height: 60px; min-height: 60px"
     },
     "hide-element": {
