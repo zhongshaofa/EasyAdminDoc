@@ -9,7 +9,7 @@
 | index | 列表 |
 | add | 添加 |
 | edit | 编辑 |
-| del | 删除 |
+| delete | 删除 |
 | export | 导出 |
 | modify | 属性修改 |
 

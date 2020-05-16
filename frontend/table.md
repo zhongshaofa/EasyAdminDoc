@@ -16,7 +16,7 @@
 | index_url | 列表接口 | string| 是 | |
 | add_url | 添加接口 | string| 否 | 需用添加功能必填 |
 | edit_url | 编辑接口 | string| 否 | 需用编辑功能必填 |
-| del_url | 删除接口 | string| 否 | 需用删除功能必填 |
+| delete_url | 删除接口 | string| 否 | 需用删除功能必填 |
 | export_url | 导出接口 | string| 否 | 需用导出功能必填 |
 | modify_url | 属性修改接口 | string| 否 | 需用属性修改功能必填（例如：状态的切换） |
 
@@ -29,7 +29,7 @@
         index_url: 'mall.goods/index',
         add_url: 'mall.goods/add',
         edit_url: 'mall.goods/edit',
-        del_url: 'mall.goods/del',
+        delete_url: 'mall.goods/delete',
         export_url: 'mall.goods/export',
         modify_url: 'mall.goods/modify',
         stock_url: 'mall.goods/stock',
@@ -61,11 +61,14 @@
     });
 ```
 
-# 表格toolbar
+# 表格toolbar操作栏
 
-# 列参数
-
-# 列operat
+* 默认内置有四种toolbar操作方法，分别是：
+    * `refresh`
+    * `add`
+    * `delete`
+    * `export`
+* 另外可以根据下方提供的参数进行自定义扩展
 
 | 参数 | 说明 | 类型 | 是否必填| 默认值 | 备注|
 | --- | --- | --- |--- | --- | --- |
@@ -73,13 +76,128 @@
 | icon | 图标信息 | string| 否 | | 在行操作里面，不建议使用图标 |
 | title | 提示信息 | string| 否 | 为空则读取`text`属性 | |
 | text | 文本信息 | string| 否 | 为空则读取`title`属性 | |
-| method | 执行方式 | string| 否 | open | `open` 为弹出层打开  `request` 为直接请求|
+| method | 执行方式 | string| 否 | open | 可用值，请参考下方参数说明 |
+| url | 请求链接 | string| 是 | | |
+| auth | 权限规则 | string| 是 | | 权限规则，具体请参考配置`auth权限验证`模块 |
+| extend | 扩展属性 | string| 否 | | 例如弹出层全屏操作，可以加上：`data-full="true"` |
+
+> 相关参数说明
+
+* `method` 执行方式：
+    * `open` 弹出层打开
+    * `request` 直接请求
+    
+> 示例
+
+```js
+   toolbar: ['refresh',
+       [{
+          text: '添加',
+          url: init.add_url,
+          method: 'open',
+          auth: 'add',
+          class: 'layui-btn layui-btn-normal layui-btn-sm',
+          icon: 'fa fa-plus ',
+          extend: 'data-full="true"',
+        }],
+       'delete', 'export'],
+```
+
+# 扩展列参数
+
+列参数完美兼容layui的table所有列参数，具体请查看layui官网。
+
+# 搜索表单生成器
+
+提供快捷搜索表单生成器，根据table表格初始化时的列参数进行动态生成。
+
+> 下方是相关的表格列参数
+
+| 参数 | 说明 | 类型 | 是否必填| 默认值 | 备注|
+| --- | --- | --- |--- | --- | --- |
+| search | 搜索类型 | string/bool | 否 | true | 可用值，请参考下方参数说明 |
+| searchOp | 搜索条件 | string| 否 | %*% | 可用值，请参考下方参数说明 |
+| searchTip | 搜索提示语 | string| 否 | 默认获取`title`参数值自动生成 |  |
+| searchValue | 表单初始化值 | string| 否 |  |  |
+| selectList | 下拉列表值 | object| 否 |  | 需要`search`参数等于`select`时才生效 |
+| fieldAlias | 字段别名 | string| 否 | 与`field`参数相等 | 某些特殊情况下才需要，正常用不上 |
+
+> 相关参数说明
+
+* `search` 搜索类型：
+    * `false` 关闭搜索
+    * `true` 开启搜索
+    * `select` 下拉选择
+    * `range` 时间范围
+    * `time` 时间格式
+* `searchOp` 搜索条件：
+    * `=` 精确搜索
+    * `%*%` 模糊搜索
+    * `*%` 右匹配模糊搜索
+    * `%*` 左匹配模糊搜索
+    * `range` 范围搜索
+
+> 代码示例
+
+```js
+    cols: [[
+        {type: "checkbox"},
+        {field: 'id', width: 80, title: 'ID'},
+        {field: 'sort', width: 80, title: '排序', edit: 'text'},
+        {field: 'title', minWidth: 80, title: '商品名称'},
+        {field: 'logo', minWidth: 80, title: '分类图片', search: false, templet: ea.table.image},
+        {field: 'status', title: '状态', width: 85, selectList: {0: '禁用', 1: '启用'}, templet: ea.table.switch},
+        {field: 'create_time', minWidth: 80, title: '创建时间', search: 'range'},
+    ]],
+```
+
+# 列operat操作栏
+
+* 默认内置有两种operat操作方法，分别是：
+    * `edit` 
+    * `delete`
+* 另外可以根据下方提供的参数进行自定义扩展
+
+| 参数 | 说明 | 类型 | 是否必填| 默认值 | 备注|
+| --- | --- | --- |--- | --- | --- |
+| class | 样式信息 | string| 否 | |   |
+| icon | 图标信息 | string| 否 | | 在行操作里面，不建议使用图标 |
+| title | 提示信息 | string| 否 | 为空则读取`text`属性 | |
+| text | 文本信息 | string| 否 | 为空则读取`title`属性 | |
+| method | 执行方式 | string| 否 | open | 可用值，请参考下方参数说明 |
 | url | 请求链接 | string| 是 | | |
 | auth | 权限规则 | string| 是 | | 权限规则，具体请参考配置`auth权限验证`模块 |
 | field | 绑定行字段 | string| 否 | id | 会自动根据此字段生成链接后缀 |
 | extend | 扩展属性 | string| 否 | | 例如弹出层全屏操作，可以加上：`data-full="true"` |
 
-# 内置templet方法
+> 相关参数说明
+
+* `method` 执行方式：
+    * `open` 弹出层打开
+    * `request` 直接请求
+    
+> 示例
+
+```js
+    operat: [
+        [{
+            text: '编辑',
+            url: init.edit_url,
+            method: 'open',
+            auth: 'edit',
+            class: 'layui-btn layui-btn-xs layui-btn-success',
+            extend: 'data-full="true"',
+        }, {
+            text: '入库',
+            url: init.stock_url,
+            method: 'open',
+            auth: 'stock',
+            class: 'layui-btn layui-btn-xs layui-btn-normal',
+        }],
+        'delete']
+```
+
+# 列内置templet方法
 
 | 方法 | 说明 | 备注|
 | --- | --- | --- |
@@ -91,3 +209,103 @@
 | ea.table.percent | 格式化为百分比 |  |
 | ea.table.icon | 显示图标 |  |
 | ea.table.value | 格式化数据 | 多层对象数据的显示 |
+| ea.table.tool | 列操作栏 | 自动生成列操作栏 |
+
+> 示例
+
+```js
+    cols: [[
+        {field: 'head_img', minWidth: 80, title: '头像', templet: ea.table.image},
+        {field: 'status', title: '状态', width: 85, search: 'select', selectList: {0: '禁用', 1: '启用'}, templet: ea.table.switch},
+        {width: 250, title: '操作', templet: ea.table.tool}
+    ]],
+```
+
+
+# 完整例子
+
+```js
+define(["jquery", "easy-admin"], function ($, ea) {
+
+    var init = {
+        table_elem: '#currentTable',
+        table_render_id: 'currentTableRenderId',
+        index_url: 'mall.goods/index',
+        add_url: 'mall.goods/add',
+        edit_url: 'mall.goods/edit',
+        delete_url: 'mall.goods/delete',
+        export_url: 'mall.goods/export',
+        modify_url: 'mall.goods/modify',
+        stock_url: 'mall.goods/stock',
+    };
+
+    var Controller = {
+
+        index: function () {
+            ea.table.render({
+                init: init,
+                toolbar: ['refresh',
+                    [{
+                        text: '添加',
+                        url: init.add_url,
+                        method: 'open',
+                        auth: 'add',
+                        class: 'layui-btn layui-btn-normal layui-btn-sm',
+                        icon: 'fa fa-plus ',
+                        extend: 'data-full="true"',
+                    }],
+                    'delete', 'export'],
+                cols: [[
+                    {type: "checkbox"},
+                    {field: 'id', width: 80, title: 'ID'},
+                    {field: 'sort', width: 80, title: '排序', edit: 'text'},
+                    {field: 'cate.title', minWidth: 80, title: '商品分类'},
+                    {field: 'title', minWidth: 80, title: '商品名称'},
+                    {field: 'logo', minWidth: 80, title: '分类图片', search: false, templet: ea.table.image},
+                    {field: 'market_price', width: 100, title: '市场价', templet: ea.table.price},
+                    {field: 'discount_price', width: 100, title: '折扣价', templet: ea.table.price},
+                    {field: 'total_stock', width: 100, title: '库存统计'},
+                    {field: 'stock', width: 100, title: '剩余库存'},
+                    {field: 'virtual_sales', width: 100, title: '虚拟销量'},
+                    {field: 'sales', width: 80, title: '销量'},
+                    {field: 'status', title: '状态', width: 85, selectList: {0: '禁用', 1: '启用'}, templet: ea.table.switch},
+                    {field: 'create_time', minWidth: 80, title: '创建时间', search: 'range'},
+                    {
+                        width: 250,
+                        title: '操作',
+                        templet: ea.table.tool,
+                        operat: [
+                            [{
+                                text: '编辑',
+                                url: init.edit_url,
+                                method: 'open',
+                                auth: 'edit',
+                                class: 'layui-btn layui-btn-xs layui-btn-success',
+                                extend: 'data-full="true"',
+                            }, {
+                                text: '入库',
+                                url: init.stock_url,
+                                method: 'open',
+                                auth: 'stock',
+                                class: 'layui-btn layui-btn-xs layui-btn-normal',
+                            }],
+                            'delete']
+                    }
+                ]],
+            });
+
+            ea.listen();
+        },
+        add: function () {
+            ea.listen();
+        },
+        edit: function () {
+            ea.listen();
+        },
+        stock: function () {
+            ea.listen();
+        },
+    };
+    return Controller;
+});
+```

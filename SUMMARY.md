@@ -18,7 +18,6 @@
     * [auth权限验证](frontend/auth.md)
     * [form表单](frontend/form.md)
     * [table数据表格](frontend/table.md)
-    * [table搜索器](frontend/table_search.md)
     * [内置监听事件](frontend/listen.md)
     * [日期时间](frontend/date.md)
     * [动态下拉选择](frontend/select.md)
