@@ -11,7 +11,6 @@
     * `git clone https://gitee.com/zhongshaofa/easyadmin`
 * 将网站入口部署至`public`目录下面（即`easyadmin/public`目录下）
 * 修改伪静态配置, 请参考下方伪静态设置。
-* 手动安装主目录下的`easyadmin.sql`的数据库文件
 * 运行网站地址, 会自动进入安装界面, 请根据提示进行设置, 然后点击安装。
 * 安装完成后会自动生成安装锁`config/install/lock/install.lock`, 如需重新安装, 删掉该文件即可。
 
