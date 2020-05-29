@@ -4,6 +4,9 @@
 * [系统安装](base/install.md)
 * [系统架构](base/architecture.md)
 * [数据库规范](database/database.md)
+* 命令行CURD
+    * [CURD命令大全](curd/command.md)
+    * [表结构规范](curd/table.md)
 * 配置项
     * [系统配置](config/system.md)
     * [权限忽略配置](config/auth.md)
