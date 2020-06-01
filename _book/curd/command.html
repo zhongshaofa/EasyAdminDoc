@@ -581,28 +581,28 @@
 </blockquote>
 <h1 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
 <pre><code class="lang-shell"># &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD
-php think -t test_goods
+php think curd -t test_goods
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x6587;&#x4EF6;&#x51B2;&#x7A81;&#x65F6;&#x5F3A;&#x5236;&#x8986;&#x76D6;
-php think -t test_goods -f 1
+php think curd -t test_goods -f 1
 
 # &#x5220;&#x9664;ea_test_goods&#x8868;&#x7684;CURD
-php think -t test_goods -d 1
+php think curd -t test_goods -d 1
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x63A7;&#x5236;&#x5668;&#x5728;&#x76EE;&#x5F55;demo&#x4E0B;&#x7684;Goods.php&#x6587;&#x4EF6;
-php think -t test_goods -c demo/Goods
+php think curd -t test_goods -c demo/Goods
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x6A21;&#x578B;&#x5728;&#x76EE;&#x5F55;demo&#x4E0B;&#x7684;Goods.php&#x6587;&#x4EF6;
-php think -t test_goods -m demo/Goods
+php think curd -t test_goods -m demo/Goods
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x5E76;&#x5173;&#x8054;ea_test_cate&#x8868;, &#x5E76;&#x8BBE;&#x7F6E;&#x5916;&#x952E;&#x4E3A;cate_id
-php think -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
+php think curd -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x5E76;&#x8BBE;&#x7F6E;logo&#x5B57;&#x6BB5;&#x540E;&#x7F00;&#x4E3A;&#x5355;&#x56FE;&#x7247;
-php think -t test_goods --imageFieldSuffix=logo
+php think curd -t test_goods --imageFieldSuffix=logo
 
 # &#x751F;&#x6210;ea_test_goods&#x8868;&#x7684;CURD, &#x5E76;&#x8BBE;&#x7F6E;&#x5FFD;&#x7565;remark, stock&#x5B57;&#x6BB5;
-php think -t test_goods --ignoreFields=remark --ignoreFields=stock
+php think curd -t test_goods --ignoreFields=remark --ignoreFields=stock
 </code></pre>
 <h1 id="&#x53C2;&#x6570;&#x4ECB;&#x7ECD;"><a name="&#x53C2;&#x6570;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;&#x4ECB;&#x7ECD;</h1>
 <table>
@@ -722,7 +722,7 @@ php think -t test_goods --ignoreFields=remark --ignoreFields=stock
 </tbody>
 </table>
 <footer class="page-footer"><span class="copyright">&#xA9; zhongshaofa all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-05-29 11:42:41
+2020-06-01 10:04:18
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -779,7 +779,7 @@ php think -t test_goods --ignoreFields=remark --ignoreFields=stock
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CURD命令大全","level":"1.5.1","depth":2,"next":{"title":"表结构规范","level":"1.5.2","depth":2,"path":"curd/table.md","ref":"curd/table.md","articles":[]},"previous":{"title":"命令行CURD","level":"1.5","depth":1,"ref":"","articles":[{"title":"CURD命令大全","level":"1.5.1","depth":2,"path":"curd/command.md","ref":"curd/command.md","articles":[]},{"title":"表结构规范","level":"1.5.2","depth":2,"path":"curd/table.md","ref":"curd/table.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-nav-x","tbfed-pagefooter","search-plus","popup","highlight","image-captions","styled-blockquotes","expandable-chapters-interactive","hide-element","code","insert-logo","custom-favicon","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy zhongshaofa","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhongshaofa/easyadmin"},"search":{},"styled-blockquotes":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH1":false,"showLevel":false,"float":{"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"toolTipMode":"click"},"favicon":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/favicon.ico","expandable-chapters-interactive":{},"anchor-nav-x":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 60px","url":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/logo.png"},"search-plus":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"zhongshaofa","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"backend/controller/annotations.html#fig1.7.1.1","level":"1.7.1","list_caption":"Figure: 执行命令行","alt":"执行命令行","nro":1,"url":"../../images/node.png","index":1,"caption_template":"Figure: _CAPTION_","label":"执行命令行","attributes":{},"skip":false,"key":"1.7.1.1"}]},"title":"EasyAdmin开发文档","language":"zh-hans","gitbook":"*","sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"description":"EasyAdmin详细开发文档教程"},"file":{"path":"curd/command.md","mtime":"2020-05-29T03:42:41.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-29T04:46:47.671Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CURD命令大全","level":"1.5.1","depth":2,"next":{"title":"表结构规范","level":"1.5.2","depth":2,"path":"curd/table.md","ref":"curd/table.md","articles":[]},"previous":{"title":"命令行CURD","level":"1.5","depth":1,"ref":"","articles":[{"title":"CURD命令大全","level":"1.5.1","depth":2,"path":"curd/command.md","ref":"curd/command.md","articles":[]},{"title":"表结构规范","level":"1.5.2","depth":2,"path":"curd/table.md","ref":"curd/table.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-nav-x","tbfed-pagefooter","search-plus","popup","highlight","image-captions","styled-blockquotes","expandable-chapters-interactive","hide-element","code","insert-logo","custom-favicon","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy zhongshaofa","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhongshaofa/easyadmin"},"search":{},"styled-blockquotes":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH1":false,"showLevel":false,"float":{"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"toolTipMode":"click"},"favicon":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/favicon.ico","expandable-chapters-interactive":{},"anchor-nav-x":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 60px","url":"https://easyadmin.oss-cn-shenzhen.aliyuncs.com/docs/logo.png"},"search-plus":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"zhongshaofa","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"backend/controller/annotations.html#fig1.7.1.1","level":"1.7.1","list_caption":"Figure: 执行命令行","alt":"执行命令行","nro":1,"url":"../../images/node.png","index":1,"caption_template":"Figure: _CAPTION_","label":"执行命令行","attributes":{},"skip":false,"key":"1.7.1.1"}]},"title":"EasyAdmin开发文档","language":"zh-hans","gitbook":"*","sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"description":"EasyAdmin详细开发文档教程"},"file":{"path":"curd/command.md","mtime":"2020-06-01T02:04:18.990Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-01T02:04:32.242Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

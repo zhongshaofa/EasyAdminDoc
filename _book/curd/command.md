@@ -8,28 +8,28 @@
 
 ```shell
 # 生成ea_test_goods表的CURD
-php think -t test_goods
+php think curd -t test_goods
 
 # 生成ea_test_goods表的CURD, 文件冲突时强制覆盖
-php think -t test_goods -f 1
+php think curd -t test_goods -f 1
 
 # 删除ea_test_goods表的CURD
-php think -t test_goods -d 1
+php think curd -t test_goods -d 1
 
 # 生成ea_test_goods表的CURD, 控制器在目录demo下的Goods.php文件
-php think -t test_goods -c demo/Goods
+php think curd -t test_goods -c demo/Goods
 
 # 生成ea_test_goods表的CURD, 模型在目录demo下的Goods.php文件
-php think -t test_goods -m demo/Goods
+php think curd -t test_goods -m demo/Goods
 
 # 生成ea_test_goods表的CURD, 并关联ea_test_cate表, 并设置外键为cate_id
-php think -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
+php think curd -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
 
 # 生成ea_test_goods表的CURD, 并设置logo字段后缀为单图片
-php think -t test_goods --imageFieldSuffix=logo
+php think curd -t test_goods --imageFieldSuffix=logo
 
 # 生成ea_test_goods表的CURD, 并设置忽略remark, stock字段
-php think -t test_goods --ignoreFields=remark --ignoreFields=stock
+php think curd -t test_goods --ignoreFields=remark --ignoreFields=stock
 ```
 
 # 参数介绍
