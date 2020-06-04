@@ -25,6 +25,9 @@ php think curd -t test_goods -m demo/Goods
 # 生成ea_test_goods表的CURD, 并关联ea_test_cate表, 并设置外键为cate_id
 php think curd -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
 
+# 生成ea_test_goods表的CURD, 并关联ea_test_cate表, 并设置只显示title,image两个字段
+php think curd -t test_goods -r test_cate --foreignKey=cate_id --relationOnlyFileds=title,image
+
 # 生成ea_test_goods表的CURD, 并设置logo字段后缀为单图片
 php think curd -t test_goods --imageFieldSuffix=logo
 
@@ -54,6 +57,7 @@ php think curd -t test_goods --ignoreFields=remark --ignoreFields=stock
 | -r | --relationTable=VALUE | 关联表名 |
 | -fkey | --foreignKey=VALUE | 关联外键 |
 | -pkey | --primaryKey=VALUE | 关联主键 |
+| -rofs | --relationOnlyFileds=VALUE | 关联模型中只显示的字段 |
 | -remf | --relationModelFilename=VALUE | 关联模型文件名 |
 | -f | --force=VALUE | 强制覆盖模式 |
 | -d | --delete=VALUE | 删除模式 |
