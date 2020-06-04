@@ -43,10 +43,10 @@
 | images | 多图片 | | 
 | file | 单文件 | | 
 | files | 多文件 | | 
-| date | 时间组件 | | 
+| date | 时间组件 | 需配合`数据集`使用,时间控件类型选择 | 
 | editor | 富文本 | | 
 | textarea | 普通文本 | | 
-| select | 下拉选择| 需配合`数据集`使用| 
+| select | 下拉选择| 需配合`数据集`使用 | 
 | switch | 开关组件 | 需配合`数据集`使用| 
 | checkbox | 多选框 |需配合`数据集`使用 | 
 | radio | 单选框|需配合`数据集`使用 | 
@@ -72,6 +72,8 @@ CREATE TABLE `ea_test_goods` (
   `virtual_sales` int(11) DEFAULT '0' COMMENT '虚拟销量',
   `stock` int(11) DEFAULT '0' COMMENT '库存',
   `total_stock` int(11) DEFAULT '0' COMMENT '总库存',
+  `test_datetime` datetime DEFAULT NULL COMMENT '测试完整时间{date}(datetime)',
+  `up_date` datetime DEFAULT NULL COMMENT '上架时间{date}(date)',
   `sort` int(11) DEFAULT '0' COMMENT '排序',
   `status` tinyint(1) unsigned DEFAULT '1' COMMENT '状态 {radio} (0:禁用,1:启用)',
   `remark` varchar(255) DEFAULT NULL COMMENT '备注说明',

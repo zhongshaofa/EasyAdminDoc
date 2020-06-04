@@ -24,6 +24,7 @@
     * [内置监听事件](frontend/listen.md)
     * [动态下拉选择](frontend/select.md)
     * [上传组件](frontend/upload.md)
+    * [时间控件](frontend/date.md)
     * [富文本编辑器](frontend/editor.md)
 * 插件功能
     * [插件使用](addons/use.md)
