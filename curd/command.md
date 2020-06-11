@@ -28,6 +28,9 @@ php think curd -t test_goods -r test_cate --foreignKey=cate_id --primaryKey=id
 # 生成ea_test_goods表的CURD, 并关联ea_test_cate表, 并设置只显示title,image两个字段
 php think curd -t test_goods -r test_cate --foreignKey=cate_id --relationOnlyFileds=title,image
 
+# 生成ea_test_goods表的CURD, 并关联ea_test_cate表, 并设置主表外键cate_id在表单的下拉选择显示的关联表的title字段
+php think curd -t test_goods -r test_cate --foreignKey=cate_id --relationBindSelect=title
+
 # 生成ea_test_goods表的CURD, 并设置logo字段后缀为单图片
 php think curd -t test_goods --imageFieldSuffix=logo
 
@@ -60,5 +63,6 @@ php think curd -t test_goods --ignoreFields=remark --ignoreFields=stock
 |  | --foreignKey=VALUE | 关联外键 |
 |  | --primaryKey=VALUE | 关联主键 |
 |  | --relationOnlyFileds=VALUE | 关联模型中只显示的字段 |
+|  | --relationBindSelect=VALUE | 关联模型中的字段用于主表外键的表单下拉选择 |
 |  | --relationModelFilename=VALUE | 关联模型文件名 |
 
