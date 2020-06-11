@@ -79,6 +79,7 @@
 | method | 执行方式 | string| 否 | open | 可用值，请参考下方参数说明 |
 | url | 请求链接 | string| 是 | | |
 | auth | 权限规则 | string| 是 | | 权限规则，具体请参考配置`auth权限验证`模块 |
+| checkbox | 是否多选 | bool| 否 | false | 如果为true, 不管是弹出层还是直接请求, 请求时会携带上勾选的id值 |
 | extend | 扩展属性 | string| 否 | | 例如弹出层全屏操作，可以加上：`data-full="true"` |
 
 > 相关参数说明
