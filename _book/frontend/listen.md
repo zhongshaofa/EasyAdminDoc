@@ -24,6 +24,7 @@
 | --- | --- | --- |--- | --- | --- |
 | data-request | 直接请求 | string| 是 | | 参数值为直接请求的url  |
 | data-title | 请求时的提示语 | string| 是 | |   |
+| data-direct | 是否直接请求 | bool| 否 | | 如果为`true`，将会直接对链接进行请求，一般用于文件链接之类的  |
 | data-table | 绑定的table id | string| 否 | | 如果有，请求成功会自动刷新对应的数据表格  |
 
 ```html
